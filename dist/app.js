@@ -3,9 +3,9 @@ const app = express();
 const ip = "127.0.0.1";
 const port = 3000;
 app.get("/", (req, res, next) => {
-  res.status(200).send("Hello");
+    res.status(200).send("Hello");
 });
 app.listen(port, () => {
-  console.log(`App listening on: http://${ip}:${port}`);
+    console.log(`App listening on: http://${ip}:${port}`);
 });
 //# sourceMappingURL=app.js.map

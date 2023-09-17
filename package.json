@@ -2,12 +2,13 @@
   "name": "ts-new",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "build": "rimraf dist && tsc",
     "start": "pnpm build && node dist/app.js",
-    "serve": "pnpm build && tsc -w & nodemon ./dist/app.js"
+    "serve": "pnpm build && tsc -w & nodemon ./dist/app.js",
+    "serve:ts": "nodemon --esm ./src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "nodemon": "^3.0.1",
     "prettier": "^3.0.3",
     "prettier-eslint": "^15.0.1",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1"
   }
 }
