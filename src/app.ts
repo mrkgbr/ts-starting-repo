@@ -1,10 +1,10 @@
-import express, { Express, Request, Response, NextFunction } from "express";
+import express, { Request, Response, NextFunction } from "express";
 
 const app = express();
 const ip = "127.0.0.1";
 const port = 3000;
 
-app.get("/", (req: Request, res: Response, next: NextFunction): void => {
+app.get("/", (_req: Request, res: Response, _next: NextFunction): void => {
   res.status(200).send("Hello");
 });
 
